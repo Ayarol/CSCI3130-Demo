@@ -15,9 +15,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
     public void EditMessage (View view){
-        EditText editText = (EditText) findViewById(R.id.editText);
-        String message = (String) editText.getText().toString();
-        TextView textView =(TextView) findViewById(R.id.textView);
+        EditText editText = findViewById(R.id.editText);
+        String message = editText.getText().toString();
+        TextView textView = findViewById(R.id.textView);
         textView.setText(message);
     }
 }
